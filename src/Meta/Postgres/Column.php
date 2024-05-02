@@ -29,7 +29,8 @@ class Column implements \Reliese\Meta\Column
      */
     public static $mappings = [
       'string' => ['character varying', 'varchar', 'text', 'string', 'char', 'character','enum', 'tinytext', 'mediumtext', 'longtext', 'json'],
-      'datetime' => ['timestamp with time zone', 'timestamp without time zone', 'timestamptz', 'datetime', 'year', 'date', 'time', 'timestamp'],
+      'immutable_date' => ['year', 'date'],
+      'immutable_datetime' => ['timestamp with time zone', 'timestamp without time zone', 'timestamptz', 'datetime', 'time', 'timestamp'],
       'int' => ['int', 'integer', 'tinyint', 'smallint', 'mediumint', 'bigint', 'bigserial', 'serial', 'smallserial', 'tinyserial', 'serial4', 'serial8'],
       'float' => ['float', 'decimal', 'numeric', 'dec', 'fixed', 'double', 'real', 'double precision'],
       'boolean' => ['boolean', 'bool', 'bit'],

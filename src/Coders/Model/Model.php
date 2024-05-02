@@ -352,8 +352,11 @@ class Model
             case 'collection':
                 $type = '\Illuminate\Support\Collection';
                 break;
-            case 'datetime':
-                $type = '\Carbon\Carbon';
+            case 'immutable_date':
+                $type = '\Carbon\CarbonImmutable';
+                break;
+            case 'immutable_datetime':
+                $type = '\Carbon\CarbonImmutable';
                 break;
             case 'binary':
                 $type = 'string';
